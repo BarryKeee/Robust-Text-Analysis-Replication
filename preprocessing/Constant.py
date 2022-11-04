@@ -10,3 +10,5 @@ if not os.path.exists(MATRIX_PATH):
     os.mkdir(MATRIX_PATH)
 UTILFILE_PATH = os.path.join(cwd, 'util_files')
 PLOT_PATH = os.path.join(cwd, 'plots')
+if not os.path.exists(PLOT_PATH):
+    os.mkdir(PLOT_PATH)
