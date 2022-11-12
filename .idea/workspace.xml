@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bc9e8e4-9833-4320-a794-4003d75c4657" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/Main_generate_NMF_draws.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/Main_preprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/data_preprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/estimation_and_nmf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/generate_matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing/Constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/Constant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/EmpiricalApplication.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/EmpiricalApplication_ML.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/EmpiricalApplication_Prior.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/Figures/Posterior_Difference_Percent.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/Figures/Posterior_meeting.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/Figures/Prior_Difference_Percent.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/Old/EmpiricalApplication_Prior.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/covariates.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/empirical_analysis/6PosteriorDraws/covariates.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
