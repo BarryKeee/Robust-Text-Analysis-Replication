@@ -5,12 +5,13 @@ function empirical_application(FOMC_sec, func, save_fig_name, ...
 % 200 posterior draws
 
 draws = load(prior_post_draw_name);
+draws_B_Theta = draws.post_draws_B_Theta;
 
-if density_type == "Posterior"
-    draws_B_Theta = draws.post_draws_B_Theta;
-else
-    draws_B_Theta = draws.prior_draws_B_Theta;
-end
+%if density_type == "Posterior"
+%    draws_B_Theta = draws.post_draws_B_Theta;
+%else
+%    draws_B_Theta = draws.prior_draws_B_Theta;
+%end
 %% 2) Load meeting dates
 
 opts = detectImportOptions('covariates.xlsx');

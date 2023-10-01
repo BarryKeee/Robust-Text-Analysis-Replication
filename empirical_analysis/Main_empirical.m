@@ -13,7 +13,7 @@ prior_post_draw_name = NMF_draw_parent_folder + '\' + prior_posterior_spec ...
     + '\B_Theta_post_draws_sec1.mat'; 
 NMF_draw_folder_name = NMF_draw_parent_folder + '\' + prior_posterior_spec ...
     + '\FOMC1\NMF_Theta';
-x_lims = [15, 40];
+x_lims = [15, 60];
 y_lims = [0, 0.45];
 x_label = '%';
 density_type = "Posterior";
@@ -70,7 +70,7 @@ prior_post_draw_name = NMF_draw_parent_folder + '\' + prior_posterior_spec ...
     + '\B_Theta_post_draws_sec2.mat'; 
 NMF_draw_folder_name = NMF_draw_parent_folder + '\' + prior_posterior_spec ...
     + '\FOMC2\NMF_Theta';
-x_lims = [4, 25];
+x_lims = [7, 35];
 y_lims = [0, 0.5];
 x_label = '%';
 density_type = "Posterior";
