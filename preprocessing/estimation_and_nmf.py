@@ -124,9 +124,9 @@ def algo1_only_store_draws(gamma1, lam1, gamma2, lam2, eps, T, save_folder, post
         end = timeit.default_timer()
         print('Finished posterior draw {}. Time: {}'.format(i + 1, end - start))
 
-    scipy.io.savemat(os.path.join(save_folder, 'FOMC1', 'B_Theta_post_draws_sec1.mat'),
+    scipy.io.savemat(os.path.join(save_folder, 'B_Theta_post_draws_sec1.mat'),
                      {'post_draws_B_Theta': np.array(B_Theta_sec1_post_draw_store)})
-    scipy.io.savemat(os.path.join(save_folder, 'FOMC2', 'B_Theta_post_draws_sec1.mat'),
+    scipy.io.savemat(os.path.join(save_folder, 'B_Theta_post_draws_sec2.mat'),
                      {'post_draws_B_Theta': np.array(B_Theta_sec2_post_draw_store)})
 
 
