@@ -5,7 +5,7 @@ The paper has two modules of programming exercises. One is a simulation exercise
 
 Compile language: Matlab, Python
 
-Python dependencies: 
+Python dependencies: tika, topicmodels, nltk, gensim, scipy
 
 ## Simulation
 

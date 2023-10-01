@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bc9e8e4-9833-4320-a794-4003d75c4657" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Robust-Text-Analysis-Replication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Robust-Text-Analysis-Replication.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empirical_analysis/Figures/posterior_alpha_1.25_beta_0.025_percent_diff.eps" beforeDir="false" afterPath="$PROJECT_DIR$/empirical_analysis/Figures/posterior_alpha_1.25_beta_0.025_percent_diff.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing/Constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/Constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing/Main_generate_NMF_draws.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/Main_generate_NMF_draws.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing/estimation_and_nmf.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/estimation_and_nmf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/1Sensitivity/Sensivitiy_N10.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/1Sensitivity/Sensivitiy_N10.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/1Sensitivity/Sensivitiy_N100.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/1Sensitivity/Sensivitiy_N100.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/2Range/Algo2Range_N10.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/2Range/Algo2Range_N10.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/2Range/Algo2Range_N100.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/2Range/Algo2Range_N100.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/2Range/CredibleSet90_Range_N10.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/2Range/CredibleSet90_Range_N10.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/2Range/CredibleSet90_Range_N100.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/2Range/CredibleSet90_Range_N100.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/2Range/Range_N10.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/2Range/Range_N10.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/2Range/Range_N100.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/2Range/Range_N100.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/3MonteCarlo/Freq_MC.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/3MonteCarlo/Freq_MC.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/3MonteCarlo/MC_N10.mat" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/3MonteCarlo/MC_N10.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/3MonteCarlo/MC_N1000.mat" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/3MonteCarlo/MC_N1000.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/3MonteCarlo/Robust_MC.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/3MonteCarlo/Robust_MC.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/3MonteCarlo/diff_MC.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/3MonteCarlo/diff_MC.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/4Approximation/Approximation_Range_N10.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/4Approximation/Approximation_Range_N10.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/4Approximation/Approximation_Range_N100.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/4Approximation/Approximation_Range_N100.eps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/5AnchorWord/AnchorWord_vs_posterior.eps" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/5AnchorWord/AnchorWord_vs_posterior.eps" afterDir="false" />
-    </list>
+    <list default="true" id="6bc9e8e4-9833-4320-a794-4003d75c4657" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
