@@ -19,7 +19,8 @@ def _sample_dirichlet(alpha):
     return np.array(res)
 
 
-def vb_estimate(section, onlyTF=True, K=40, alpha=0.025, eta=0.025, tau=1024, kappa=0.7):
+def vb_estimate(section, onlyTF=True, K=40, alpha=0.025, eta=0.025, tau=1024, kappa=0.7,
+                docs_idx_list=None):
     print('VB Estimation for {}'.format(section))
     vocab_1 = pd.read_excel(os.path.join(MATRIX_PATH, section + '_dictionary_meeting{}.xlsx'.format('_onlyTF' if onlyTF else '')), index_col=0, engine='openpyxl').index
     vocab_1 = list(vocab_1)
@@ -28,7 +29,8 @@ def vb_estimate(section, onlyTF=True, K=40, alpha=0.025, eta=0.025, tau=1024, ka
         text1 = pickle.load(f)
 
     text1 = [' '.join(x) for x in text1]
-
+    if docs_idx_list is not None:
+        text1 = [text1[x] for x in range(len(text1)) if x in docs_idx_list]
     D = len(text1) # the number of documents
 
     # initialize online LDA algorithm
@@ -39,6 +41,7 @@ def vb_estimate(section, onlyTF=True, K=40, alpha=0.025, eta=0.025, tau=1024, ka
     posterior_mean = gamma / gamma.sum(axis=0)
     # compute herfindehl of the posterior mean
     return (posterior_mean**2).sum(axis=0),posterior_mean, gamma, olda._lambda, olda, text1
+
 
 def find_NMF_given_solution(B_init, Theta_init, beta, T, eps, maxit=100000, verbose=False):
 
@@ -86,14 +89,13 @@ def algo1_only_store_draws(gamma1, lam1, gamma2, lam2, eps, T, save_folder, post
     B_Theta_sec1_post_draw_store = []
     B_Theta_sec2_post_draw_store = []
 
-    if not os.path.exists(save_folder):
-        os.mkdir(save_folder)
-        os.mkdir(os.path.join(save_folder, 'FOMC1'))
-        os.mkdir(os.path.join(save_folder, 'FOMC2'))
-        os.mkdir(os.path.join(save_folder, 'FOMC1', 'NMF_B'))
-        os.mkdir(os.path.join(save_folder, 'FOMC1', 'NMF_Theta'))
-        os.mkdir(os.path.join(save_folder, 'FOMC2', 'NMF_B'))
-        os.mkdir(os.path.join(save_folder, 'FOMC2', 'NMF_Theta'))
+    os.makedirs(save_folder, exist_ok=True)
+    os.makedirs(os.path.join(save_folder, 'FOMC1'), exist_ok=True)
+    os.makedirs(os.path.join(save_folder, 'FOMC2'), exist_ok=True)
+    os.makedirs(os.path.join(save_folder, 'FOMC1', 'NMF_B'), exist_ok=True)
+    os.makedirs(os.path.join(save_folder, 'FOMC1', 'NMF_Theta'), exist_ok=True)
+    os.makedirs(os.path.join(save_folder, 'FOMC2', 'NMF_B'), exist_ok=True)
+    os.makedirs(os.path.join(save_folder, 'FOMC2', 'NMF_Theta'), exist_ok=True)
 
     for i in range(post_draw_num):
         print('Drawing posterior number {}'.format(i+1))
@@ -126,3 +128,21 @@ def algo1_only_store_draws(gamma1, lam1, gamma2, lam2, eps, T, save_folder, post
                      {'post_draws_B_Theta': np.array(B_Theta_sec1_post_draw_store)})
     scipy.io.savemat(os.path.join(save_folder, 'FOMC2', 'B_Theta_post_draws_sec1.mat'),
                      {'post_draws_B_Theta': np.array(B_Theta_sec2_post_draw_store)})
+
+
+def store_posterior_draws(gamma, lam, post_draw_num, save_folder, cache_name):
+    np.random.seed(0)
+    B_Theta_post_draw_store = []
+    os.makedirs(save_folder, exist_ok=True)
+
+    for i in range(post_draw_num):
+        print('Drawing posterior number {}'.format(i+1))
+
+        # sample from dirichlet distribution given lambda and gamma
+        B = _sample_dirichlet(lam).T
+        Theta = _sample_dirichlet(gamma).T
+
+        B_Theta_post_draw_store.append([B, Theta])
+
+    scipy.io.savemat(os.path.join(save_folder, f'{cache_name}.mat'),
+                     {'post_draws_B_Theta': np.array(B_Theta_post_draw_store)})

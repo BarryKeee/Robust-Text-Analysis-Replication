@@ -14,7 +14,7 @@ T = 120
 def main():
 
     save_folder = os.path.join(NMF_draws_folder, 'posterior_alpha_1.25_beta_0.025')
-    _, _, gamma1, lam1, _, _ = vb_estimate('FOMC1',onlyTF=True, K=K, alpha=1.25, eta=0.025)
+    _, _, gamma1, lam1, _, _ = vb_estimate('FOMC1', onlyTF=True, K=K, alpha=1.25, eta=0.025)
     _, _, gamma2, lam2, _, _ = vb_estimate('FOMC2', onlyTF=True, K=K, alpha=1.25, eta=0.025)
     algo1_only_store_draws(gamma1, lam1, gamma2, lam2, eps, T, save_folder, post_draw_num=200, beta=0.5)
 
