@@ -8,7 +8,7 @@ import os
 import pandas as pd
 import string
 
-import topicmodels
+from preprocessing.preprocess_pdf import raw_docs
 from nltk.stem import PorterStemmer
 
 def generate_raw_data():
@@ -95,7 +95,7 @@ def tokenize(content):
     FOMC_token = []
     for i,statement in enumerate(content):
         statement = statement.lower()
-        docsobj = topicmodels.RawDocs([statement], "long")
+        docsobj = raw_docs.RawDocs([statement], "long")
         docsobj.token_clean(1)
         # remove months, "unintelligible"
         additional_stopword = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september',

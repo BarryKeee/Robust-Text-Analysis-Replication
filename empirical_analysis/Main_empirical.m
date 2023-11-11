@@ -41,7 +41,7 @@ prior_post_draw_name = NMF_draw_parent_folder + '\' + prior_posterior_spec ...
     + '\B_Theta_post_draws_sec1.mat'; 
 NMF_draw_folder_name = NMF_draw_parent_folder + '\' + prior_posterior_spec ...
     + '\FOMC1\NMF_Theta';
-x_lims = [-5, 5];
+x_lims = [-8, 8];
 y_lims = [0, 0.45];
 x_label = '%';
 density_type = "Prior";
@@ -83,7 +83,7 @@ empirical_application(FOMC_sec, func, save_fig_name, ...
 func = @HHI_regression;
 save_fig_name = prior_posterior_spec + '_regression_FOMC2';
 x_label = 'Regression Coef on Transparency';
-x_lims = [-3*1e-3, 4*1e-3];
+x_lims = [-9*1e-3, 2*1e-3];
 y_lims = [0, 1500];
 disp(save_fig_name)
 empirical_application(FOMC_sec, func, save_fig_name, ...
