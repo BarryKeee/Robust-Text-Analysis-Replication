@@ -3,7 +3,7 @@ import os
 import timeit
 import scipy
 import pandas as pd
-from preprocessing.Constant import MATRIX_PATH
+from Constant import MATRIX_PATH
 import pickle
 import onlineldavb
 

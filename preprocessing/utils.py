@@ -1,7 +1,7 @@
 import nltk
 from nltk.collocations import *
 import matplotlib.pyplot as plt
-from preprocessing.Constant import PLOT_PATH
+from Constant import PLOT_PATH
 import os
 
 

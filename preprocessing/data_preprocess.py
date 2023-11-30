@@ -1,6 +1,5 @@
-from preprocessing.Constant import *
+from Constant import *
 from preprocessing.utils import bigrams, trigram, replace_collocation
-import tika
 from tika import parser
 import re
 import timeit

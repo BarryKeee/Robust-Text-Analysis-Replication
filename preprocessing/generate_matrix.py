@@ -1,8 +1,8 @@
 import pandas as pd
-from preprocessing.Constant import *
+from Constant import *
 import numpy as np
 import gensim
-from gensim import corpora, models
+from gensim import corpora
 import matplotlib.pyplot as plt
 import pickle
 
